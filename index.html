@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshPrep - Cooking Made Fun.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#hero">
+                <img src="assets/logo.png" alt="FreshPrep Logo" class="nav-logo">
+                <span class="logo-text">FreshPrep</span>
+            </a>
+        </div>
+        <button id="burger" class="burger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav-links" class="nav-links">
+            <a href="#account">Sign Up</a>
+            <a href="#daily-recipe">Daily Recipe</a>
+            <a href="#explore-recipes">Explore</a>
+            <a href="#grocery-list">Grocery List</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="hero" class="hero-section">
+            <h1>New Recipes EveryDay.</h1>
+            <p>Discover new recipes and keep your groceries organized in one beautiful place.</p>
+            <a href="#account" class="cta-button">Get Started</a>
+        </section>
+
+        <section id="account" class="account-section">
+            <h2>Create Your A Profile</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="user@any.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password *</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" required placeholder="Min 8 characters">
+                        <button type="button" id="toggle-password">Show</button>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Register</button>
+                <p id="form-feedback" class="feedback-msg"></p>
+            </form>
+        </section>
+
+        <section id="daily-recipe" class="recipe-section">
+            <h2>Recipe of the Day</h2>
+            <div id="recipe-container" class="recipe-card">
+                <p>Today's Recipe is loading...</p>
+            </div>
+        </section>
+
+        <section id="explore-recipes" class="recipe-section">
+            <h2>Explore Random Recipes</h2>
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <button id="randomize-btn" class="cta-button">Shuffle Recipes</button>
+            </div>
+            <div id="recipe-grid" class="recipe-grid">
+                <p>Loading recipes...</p>
+            </div>
+        </section>
+
+        <section id="grocery-list" class="grocery-section">
+            <h2>Digital Grocery List</h2>
+            <div class="todo-wrapper">
+                <input type="text" id="grocery-input" placeholder="Add an ingredient to your list">
+                <button id="add-grocery-btn">Add Item</button>
+                <button id="clear-all-btn" class="clear-btn">Clear All Items</button>
+                <ul id="grocery-items">
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>FreshPrep</h3>
+                <p>Food made fun. Track your groceries, and discover delicious new recipes any time you want.</p>
+            </div>
+            
+            <div class="footer-section links">
+                <h3>Navigation Links</h3>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#account">Create Profile</a></li>
+                    <li><a href="#daily-recipe">Daily Recipe</a></li>
+                    <li><a href="#explore-recipes">Explore Recipes</a></li>
+                    <li><a href="#grocery-list">Grocery List</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section social">
+                <h3>Extra Links</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/isabaddie/FreshPrep.github.io" target="_blank">GitHub</a>
+                    <a href="https://btu.edu.ge" target="_blank">BTU</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 FreshPrep, Saba Saluqvadze. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p>We use cookies to save your grocery list preferences.</p>
+        <button id="accept-cookies">Accept and Close</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
